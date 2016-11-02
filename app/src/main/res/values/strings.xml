@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">StoreHomie</string>
     <string name="title_activity_map_screen">Map</string>
+    <string name="migros">Migros</string>
+    <string name="coop">Coop</string>
+    <string name="denner">Denner</string>
+    <string name="volg">Volg</string>
+    <string name="landi">Landi</string>
+    <string name="suchen">Suchen</string>
+    <string name="supermarkt">Supermarkt suchen...</string>
+    <string name="button_openFilter">Suchen</string>
 </resources>

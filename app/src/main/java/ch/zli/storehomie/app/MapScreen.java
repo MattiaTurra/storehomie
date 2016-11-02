@@ -1,9 +1,11 @@
 package ch.zli.storehomie.app;
 
 import android.content.Context;
+import android.content.Intent;
 import android.location.LocationManager;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.view.View;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -16,8 +18,6 @@ public class MapScreen extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +26,12 @@ public class MapScreen extends FragmentActivity implements OnMapReadyCallback {
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+    }
+
+    public void openFilter(View v)
+    {
+        Intent intent = new Intent(getApplicationContext(), FilterScreen.class);
+        startActivity(intent);
     }
 
 
