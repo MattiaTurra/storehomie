@@ -1,5 +1,6 @@
 package ch.zli.storehomie.app;
 
+import android.content.Intent;
 import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -21,4 +22,11 @@ public class FilterScreen extends AppCompatActivity {
         EditText t = (EditText)findViewById(R.id.SearchTextbox);
         t.setText(i.getText());
     }
+
+    public void openFilter(View v)
+    {
+        Intent intent = new Intent(getApplicationContext(), MapScreen.class);
+        startActivity(intent);
+    }
+
 }
