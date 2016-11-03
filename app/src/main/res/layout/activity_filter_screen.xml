@@ -33,6 +33,13 @@
             android:layout_alignBottom="@+id/SearchTextbox"
             android:layout_alignParentEnd="true" />
 
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorLine"
+            android:layout_alignTop="@+id/SuggestionLabel_migros"
+            android:layout_alignEnd="@+id/button" />
+
         <TextView
             android:onClick="onSuggestionClick"
             android:layout_width="match_parent"
@@ -45,6 +52,13 @@
             android:clickable="true"
             android:enabled="true" />
 
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorLine"
+            android:layout_above="@+id/Suggestionlabel_Coop"
+            android:layout_alignEnd="@+id/button" />
+
         <TextView
             android:onClick="onSuggestionClick"
             android:layout_width="match_parent"
@@ -55,6 +69,13 @@
             android:layout_below="@+id/SuggestionLabel_migros"
             android:layout_alignParentStart="true"
             android:clickable="true" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorLine"
+            android:layout_below="@+id/Suggestionlabel_Coop"
+            android:layout_alignEnd="@+id/button" />
 
         <TextView
             android:onClick="onSuggestionClick"
@@ -67,6 +88,13 @@
             android:layout_alignParentStart="true"
             android:clickable="true" />
 
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorLine"
+            android:layout_alignBottom="@+id/SuggestionLabel_Landi"
+            android:layout_alignEnd="@+id/button" />
+
         <TextView
             android:onClick="onSuggestionClick"
             android:layout_width="match_parent"
@@ -78,6 +106,13 @@
             android:layout_alignParentStart="true"
             android:clickable="true" />
 
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorLine"
+            android:layout_above="@+id/SuggestionLabel_Landi"
+            android:layout_alignEnd="@+id/button" />
+
         <TextView
             android:onClick="onSuggestionClick"
             android:layout_width="match_parent"
@@ -88,6 +123,26 @@
             android:layout_below="@+id/SuggestionLabel_Volg"
             android:layout_alignParentStart="true"
             android:clickable="true" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorLine"
+            android:layout_below="@+id/SuggestionLabel_Denner"
+            android:layout_alignEnd="@+id/button" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:src="@android:drawable/ic_menu_revert"
+            android:layout_marginLeft="26px"
+            android:layout_marginRight="26px"
+            android:onClick="openFilter"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="36dp" />
 
     </RelativeLayout>
 </RelativeLayout>
