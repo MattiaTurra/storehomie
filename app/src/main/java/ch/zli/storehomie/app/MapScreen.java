@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.LocationManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -20,6 +21,7 @@ import com.google.android.gms.location.places.PlaceFilter;
 import com.google.android.gms.location.places.PlaceLikelihood;
 import com.google.android.gms.location.places.PlaceLikelihoodBuffer;
 import com.google.android.gms.location.places.Places;
+import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
@@ -28,7 +30,6 @@ public class MapScreen extends AppCompatActivity implements GoogleApiClient.OnCo
 private static final String LOG_TAG = "PlacesAPIActivity";
 private static final int GOOGLE_API_CLIENT_ID = 0;
 private GoogleApiClient mGoogleApiClient;
-private static final int PERMISSION_REQUEST_CODE = 100;
 private GoogleMap mMap;
 
     /**
@@ -45,11 +46,10 @@ private GoogleMap mMap;
         mMap = googleMap;
         LocationManager locationManager = (LocationManager)
                 getSystemService(Context.LOCATION_SERVICE);
-
-
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
                 == PackageManager.PERMISSION_GRANTED) {
             mMap.setMyLocationEnabled(true);
+            mMap.animateCamera(CameraUpdateFactory.zoomIn());
         } else {
             this.finishAffinity();
         }
@@ -84,22 +84,6 @@ private GoogleMap mMap;
     {
         Intent intent = new Intent(getApplicationContext(), FilterScreen.class);
         startActivity(intent);
-    }
 
-    public void findShops(String Name) throws SecurityException
-    {
-        PlaceFilter placeFilter = new PlaceFilter();
-        placeFilter.isRestrictedToPlacesOpenNow();
-        PendingResult<PlaceLikelihoodBuffer> result = Places.PlaceDetectionApi
-                .getCurrentPlace(mGoogleApiClient,placeFilter);
-        result.setResultCallback(new ResultCallback<PlaceLikelihoodBuffer>() {
-            @Override
-            public void onResult(PlaceLikelihoodBuffer likelyPlaces) {
-                for (PlaceLikelihood placeLikelihood : likelyPlaces) {
-                   placeLikelihood.getPlace().getPlaceTypes();
-                }
-                likelyPlaces.release();
-            }
-        });
     }
 }
