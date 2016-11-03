@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:text="@string/button_openFilter"
         android:onClick="openFilter"
-        android:id="@+id/button2"
+        android:id="@+id/filterButton"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
