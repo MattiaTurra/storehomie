@@ -39,7 +39,7 @@
             android:layout_height="1dp"
             android:background="@color/colorLine"
             android:layout_alignTop="@+id/SuggestionLabel_migros"
-            android:layout_alignEnd="@+id/button" />
+            android:layout_alignEnd="@+id/SearchButton" />
 
         <TextView
             android:onClick="onSuggestionClick"
@@ -58,7 +58,7 @@
             android:layout_height="1dp"
             android:background="@color/colorLine"
             android:layout_above="@+id/Suggestionlabel_Coop"
-            android:layout_alignEnd="@+id/button" />
+            android:layout_alignEnd="@+id/SearchButton" />
 
         <TextView
             android:onClick="onSuggestionClick"
@@ -76,7 +76,7 @@
             android:layout_height="1dp"
             android:background="@color/colorLine"
             android:layout_below="@+id/Suggestionlabel_Coop"
-            android:layout_alignEnd="@+id/button" />
+            android:layout_alignEnd="@+id/SearchButton" />
 
         <TextView
             android:onClick="onSuggestionClick"
@@ -94,7 +94,7 @@
             android:layout_height="1dp"
             android:background="@color/colorLine"
             android:layout_alignBottom="@+id/SuggestionLabel_Landi"
-            android:layout_alignEnd="@+id/button" />
+            android:layout_alignEnd="@+id/SearchButton" />
 
         <TextView
             android:onClick="onSuggestionClick"
@@ -112,7 +112,7 @@
             android:layout_height="1dp"
             android:background="@color/colorLine"
             android:layout_above="@+id/SuggestionLabel_Landi"
-            android:layout_alignEnd="@+id/button" />
+            android:layout_alignEnd="@+id/SearchButton" />
 
         <TextView
             android:onClick="onSuggestionClick"
@@ -130,9 +130,9 @@
             android:layout_height="1dp"
             android:background="@color/colorLine"
             android:layout_below="@+id/SuggestionLabel_Denner"
-            android:layout_alignEnd="@+id/button" />
+            android:layout_alignEnd="@+id/SearchButton" />
 
-        <android.support.design.widget.FloatingActionButton
+        <Button
             android:id="@+id/fab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
