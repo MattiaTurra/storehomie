@@ -64,6 +64,7 @@ private GoogleMap mMap;
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
         mGoogleApiClient = new GoogleApiClient.Builder(MapScreen.this)
+                .addApi(Places.GEO_DATA_API)
                 .addApi(Places.PLACE_DETECTION_API)
                 .enableAutoManage(this, GOOGLE_API_CLIENT_ID, this)
                 .build();

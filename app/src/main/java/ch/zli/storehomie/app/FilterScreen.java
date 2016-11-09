@@ -31,7 +31,7 @@ public class FilterScreen extends AppCompatActivity {
         TextView SuggestionLabel = (TextView)findViewById(view.getId());
         EditText searchTextbox = (EditText)findViewById(R.id.SearchTextbox);
         //Sets Textbox-Text to Suggestion-Label-Text
-        searchTextbox.setText(SuggestionLabel .getText());
+        searchTextbox.setText(SuggestionLabel.getText());
     }
 
     public void findShops(String Name) throws SecurityException {

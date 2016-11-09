@@ -43,7 +43,8 @@
             </intent-filter>
 
         </activity>
-
+        <activity android:name=".FilterScreen"
+                  android:label="@string/title_activity_filter_screen"/>
     </application>
 
 </manifest>
