@@ -35,8 +35,21 @@ public class FilterScreen extends AppCompatActivity {
     }
 
     public void findShops(String Name) throws SecurityException {
+        String search = "geo:0,0?q=";
+        //text aus textbox einfügen (bsp: "geo:0,0?q=supermarkt+migros")
+        EditText searchTextbox = (EditText)findViewById(R.id.SearchTextbox);
+        String searchString = searchTextbox.getText().toString();
+        search += searchString;
+
+
+        Uri gmmIntentUri = Uri.parse(search);
+        Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+        mapIntent.setPackage("com.google.android.apps.maps");
+        startActivity(mapIntent);
 
 }
+
+
 
 
     public void sendRequest(View view)

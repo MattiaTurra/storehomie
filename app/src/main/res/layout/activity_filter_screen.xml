@@ -38,8 +38,7 @@
             android:layout_width="fill_parent"
             android:layout_height="1dp"
             android:background="@color/colorLine"
-            android:layout_alignTop="@+id/SuggestionLabel_migros"
-            android:layout_alignEnd="@+id/button" />
+            android:layout_alignTop="@+id/SuggestionLabel_migros" />
 
         <TextView
             android:onClick="onSuggestionClick"
@@ -57,8 +56,7 @@
             android:layout_width="fill_parent"
             android:layout_height="1dp"
             android:background="@color/colorLine"
-            android:layout_above="@+id/Suggestionlabel_Coop"
-            android:layout_alignEnd="@+id/button" />
+            android:layout_above="@+id/Suggestionlabel_Coop" />
 
         <TextView
             android:onClick="onSuggestionClick"
@@ -75,8 +73,7 @@
             android:layout_width="fill_parent"
             android:layout_height="1dp"
             android:background="@color/colorLine"
-            android:layout_below="@+id/Suggestionlabel_Coop"
-            android:layout_alignEnd="@+id/button" />
+            android:layout_below="@+id/Suggestionlabel_Coop" />
 
         <TextView
             android:onClick="onSuggestionClick"
@@ -93,8 +90,7 @@
             android:layout_width="fill_parent"
             android:layout_height="1dp"
             android:background="@color/colorLine"
-            android:layout_alignBottom="@+id/SuggestionLabel_Landi"
-            android:layout_alignEnd="@+id/button" />
+            android:layout_alignBottom="@+id/SuggestionLabel_Landi" />
 
         <TextView
             android:onClick="onSuggestionClick"
@@ -111,8 +107,7 @@
             android:layout_width="fill_parent"
             android:layout_height="1dp"
             android:background="@color/colorLine"
-            android:layout_above="@+id/SuggestionLabel_Landi"
-            android:layout_alignEnd="@+id/button" />
+            android:layout_above="@+id/SuggestionLabel_Landi"/>
 
         <TextView
             android:onClick="onSuggestionClick"
@@ -129,10 +124,9 @@
             android:layout_width="fill_parent"
             android:layout_height="1dp"
             android:background="@color/colorLine"
-            android:layout_below="@+id/SuggestionLabel_Denner"
-            android:layout_alignEnd="@+id/button" />
+            android:layout_below="@+id/SuggestionLabel_Denner" />
 
-        <android.support.design.widget.FloatingActionButton
+        <!-- <android.support.design.widget.FloatingActionButton
             android:id="@+id/fab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -143,7 +137,7 @@
             android:onClick="openFilter"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="36dp" />
+            android:layout_marginBottom="36dp" /> -->
 
     </RelativeLayout>
 </RelativeLayout>
